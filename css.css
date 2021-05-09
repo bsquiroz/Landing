@@ -104,6 +104,11 @@
     width: 150px;
     display: inline-block;
     font-size: 1.5em;
+    transition: all 0.5s;
+}
+
+.banner-content a:hover {
+    transform: scale(1.05);
 }
 
 .wave {
