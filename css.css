@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Itim&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Itim", cursive;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+.x {
+    font-size: 3em;
+    font-weight: bold;
+    position: fixed;
+    bottom: 50px;
+    left: 20px;
+    z-index: 10000;
+    cursor: pointer;
+    display: none;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    background-color: #000;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+.menu span a {
+    font-size: 2em;
+    color: rgb(255, 184, 184);
+    text-decoration: none;
+    margin-left: 2em;
+}
+
+.menu ul {
+    display: flex;
+    height: 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-right: 2em;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: all 0.5s;
+}
+
+.menu ul li a:hover {
+    border-bottom: 1px solid rgb(255, 116, 116);
+}
+
+.banner {
+    background-image: url("./img//banner.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+}
+
+.banner-content {
+    text-align: center;
+}
+
+.banner-content h1 {
+    font-size: 3em;
+    color: #fff;
+}
+
+.banner-content h1 span {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.banner-content a {
+    background-color: rgb(0, 0, 0);
+    display: inline-block;
+    padding: 20px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 15px;
+    color: rgb(250, 144, 162);
+    margin-top: 2em;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* me */
+.me {
+    padding-top: 80px;
+    min-height: 100vh;
+}
+
+.me-profile {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.me-svg {
+    text-align: center;
+    width: 100%;
+}
+
+.me-svg img {
+    margin-top: 2em;
+    width: 100%;
+    max-width: 700px;
+}
+
+.me-profile-card {
+    width: 500px;
+    height: 300px;
+    box-shadow: 0 0.5rem 1rem rgba(255, 100, 100, 0.15);
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.me-profile-card h2 {
+    margin-bottom: 1em;
+}
+
+/* tecnologias */
+
+.tecno {
+    padding-top: 80px;
+    width: 80%;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tecno h2 {
+    font-size: 3em;
+    text-align: center;
+}
+
+.tecno h2::after {
+    content: "";
+    display: inline-block;
+    background-color: rgb(255, 131, 131);
+    width: 100%;
+    height: 4px;
+}
+.tecno-tipos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.tecno-tipos .tipo {
+    width: 300px;
+    margin: 2em;
+    padding: 2em;
+    text-align: center;
+    box-shadow: 0 0.5rem 1rem rgba(255, 100, 100, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.tipo {
+    transition: 0.3s all;
+}
+
+.tipo:hover {
+    transform: scale(1.09);
+    color: rgb(255, 103, 103);
+}
+
+.tipo h4 {
+    font-size: 1.2em;
+}
+
+/* contacto */
+.cont {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./img/contact.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.cont h2 {
+    font-size: 3em;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.cont-body {
+    background-color: rgb(255, 174, 174);
+    padding: 3em;
+    border-radius: 2em;
+    margin: 0 2em;
+}
+
+.cont-grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.cont-grid-contenido1 {
+    text-align: center;
+    width: 40%;
+}
+
+.cont-grid-contenido2 {
+    text-align: center;
+    width: 40%;
+}
+
+.cont label {
+    display: block;
+    font-weight: bold;
+    text-align: start;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"] {
+    border: none;
+    border-bottom: 1px solid rgb(255, 112, 112);
+    margin-bottom: 1em;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus {
+    border-bottom: 1px solid #000;
+}
+
+input[type="submit"] {
+    background-color: #000;
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: rgb(255, 146, 146);
+    font-weight: bold;
+    font-size: 2em;
+    margin-top: 1em;
+    transition: all 0.3s;
+}
+
+input[type="submit"]:hover {
+    transform: scale(1.09);
+    cursor: pointer;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 168, 168);
+    background-color: #000;
+    font-weight: bold;
+}
+
+@media (max-width: 640px) {
+    .x {
+        display: block;
+    }
+
+    .active {
+        display: none;
+    }
+
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        opacity: 0.5;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        height: 60%;
+    }
+
+    .menu span a {
+        margin-left: 0;
+        font-size: 3em;
+    }
+
+    .menu ul li {
+        margin-top: 2em;
+        font-size: 1.5em;
+    }
+
+    .banner-content h1 {
+        font-size: 2em;
+    }
+
+    .banner-content h1 span {
+        font-size: 1.1em;
+        font-weight: bold;
+        color: rgb(39, 0, 0);
+    }
+
+    .cont-body {
+        padding: 1.5em;
+        border-radius: 1em;
+        width: 90%;
+        margin: auto;
+    }
+
+    .cont-grid-contenido1 {
+        width: 100%;
+    }
+
+    .cont-grid-contenido2 {
+        width: 100%;
+    }
+}
